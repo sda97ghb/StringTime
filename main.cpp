@@ -7,7 +7,7 @@ void printTime()
 {
     time_t systemTime;
     time(&systemTime);
-    tm *timeTm = localtime(&systemTime);
+    tm *timeTm  = localtime(&systemTime);
     int hour    = timeTm->tm_hour;
     int minutes = timeTm->tm_min;
     int seconds = timeTm->tm_sec;
