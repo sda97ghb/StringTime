@@ -32,9 +32,9 @@ std::string GenTime(char hour, char minutes, char seconds){
     if (h == hoursStrings[0][0] && m == std::get<2>(minutesStrings.at(9)))
         return s0015;                                           //в 00:15 выводится особая строка
     switch (a.second) {
-        case MyTimeOrder::current: return h + space + m;
-        case MyTimeOrder::nextBegin: return h + space + m;
-        case MyTimeOrder::nextEnd: return m + space + h;
+        case MyTimeOrder::current:      return h + space + m;
+        case MyTimeOrder::nextBegin:    return h + space + m;
+        case MyTimeOrder::nextEnd:      return m + space + h;
         case MyTimeOrder::nextGenetive: return m + space + h;
     };
     return "TIMEERROR";
