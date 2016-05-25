@@ -15,9 +15,9 @@ std::string GenHour(char hour, MyTimeOrder timeOrder) {
     if (hour > 12) hour -= 12;
     if (hour < 0 || hour > 12) return "HOURERROR";
     switch (timeOrder) {
-        case MyTimeOrder::current: return hoursStrings[hour][0]; break;
-        case MyTimeOrder::nextBegin: return hoursStrings[hour][1]; break;
-        case MyTimeOrder::nextEnd: return hoursStrings[hour][1]; break;
+        case MyTimeOrder::current:      return hoursStrings[hour][0]; break;
+        case MyTimeOrder::nextBegin:    return hoursStrings[hour][1]; break;
+        case MyTimeOrder::nextEnd:      return hoursStrings[hour][1]; break;
         case MyTimeOrder::nextGenetive: return hoursStrings[hour][2]; break;
     };
     return "HOURERROR";
